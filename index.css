@@ -1,0 +1,180 @@
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-areas: "main";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.whatsUp {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+        "Header Header Header" 
+        "FFirst FSecond FThird" 
+        "SFirst SSecond SSecond" 
+        "Form1 Form1 Form1" 
+        "Form Form Form";
+    grid-template-columns: 0.15fr 0.25fr 0.62fr;
+    grid-template-rows: 0.05fr 0.15fr 0.45fr 0.2fr 0.15fr;
+}
+.Header {
+    display: grid;
+    grid-area: Header;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: #EAF1F5;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.FirstRowFirstColumnClass {
+    display: grid;
+    grid-area: FFirst;
+    position: sticky;
+    top: 38px;
+    text-align: center;
+    background-color: #F7F6F6;
+    box-shadow: 0 6px 4px #C0C0C0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.FirstRowSecondColumnClass {
+    display: grid;
+    grid-area: FSecond;
+    position: sticky;
+    top: 38px;
+    text-align: center;
+    background-color: #F7F6F6;
+    box-shadow: 0 6px 4px #C0C0C0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.FirstRowThirdColumnClass {
+    display: grid;
+    grid-area: FThird;
+    position: sticky;
+    top: 38px;
+    text-align: center;
+    align-items: center;
+    background-color: #F7F6F6;
+    box-shadow: 0 6px 4px #C0C0C0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.SecondRowFirstColumnClass {
+    display: grid;
+    grid-area: SFirst;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #D3D3D3;
+}
+.SecondRowFirstColumnClass li {
+    max-height: 16px;
+}
+.SecondRowSecondColumnClass {
+    display: grid;
+    grid-area: SSecond;
+}
+.SecondRowSecondColumnClass li {
+    min-height: 17px;
+    font-size: 15px;
+}
+.SecondRowSecondColumnClass li:not(:empty):hover {
+    background-color: #FFA733;
+}
+.notEmptyLi {
+    color: white;
+    padding-left: 10px;
+    background-color: #FEC63D;
+    border: 0px;
+    border-top: 1px solid #D3D3D3;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-radius: 8px;
+}
+.emptyLiId {
+    background-color: white;
+    border-top: 1px solid #D3D3D3;
+}
+.NewTaskClass {
+    grid-area: Form1;
+    position: sticky;
+    display: none;
+    grid-template-areas: "Form2";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    bottom: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+}
+
+.AddNewTaskClass {
+    grid-area: Form2;
+    display: grid;
+    grid-template-areas: "newTitle newTitle" "help startTime" "help startTime" "Add Add";
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 30% 30%;
+    grid-gap: 10px;
+    justify-content: center;
+    background-color: white;
+}
+.newTitle {
+    grid-area: newTitle;
+}
+.Add {
+    grid-area: Add;
+    background-color: #008000;
+}
+.TwoButtons {
+    grid-area: Form;
+    position: sticky;
+    bottom: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+    max-height: 54px;
+}
+.TwoButtonsClass {
+    grid-area: Form;
+    position: sticky;
+    bottom: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: grid;
+    grid-template-areas: "Start Add";
+    grid-template-columns: 0.25fr 0.25fr;
+    grid-gap: 20px;
+    justify-content: center;
+    background-color: white;
+}
+.StartButtonClass {
+    grid-area: Start;
+}
+.AddButtonClass {
+    grid-area: Add;
+}
+
+button, .NewOne {
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px;
+}
+.StartButtonClass {
+    background-color: #008000;
+}
+.NewOne {
+    background-color: #FEC63D;
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    display: grid;
+}
+.list {
+    margin-top: 23px;
+    margin-bottom: 5px;
+}
